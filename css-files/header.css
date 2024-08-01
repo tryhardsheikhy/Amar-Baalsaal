@@ -1,0 +1,72 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 5fr;  
+  color: white;
+  font-size: 13px;
+}
+
+.left-header, .right-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(3, 13, 216);
+}
+
+.right-header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgb(206, 4, 4);
+}
+
+.right-header .sth-to-do:first-child {
+  border-left: 2px solid black; /* Border on the left side of the first container */
+}
+
+.right-header .sth-to-do:last-child {
+  border-right: none; /* Remove the right border from the last child */
+}
+
+.left-header .content,
+.right-header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sth-to-do {
+  border-right: 2px solid black;
+}
+
+img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.web-name {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+.sth-to-do p {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.js-dropdown-menu {
+  display: flex;
+  flex-direction: row; /* Stack the divs horizontally */
+  align-items: center; /* Center the items horizontally */
+  justify-content: center; /* Center the items vertically */
+  flex-wrap: wrap;
+}
+
+.chapter-name button {
+  padding: 5px 10px; /* Add padding for better appearance */
+  margin: 2px;
+  border: none;
+}

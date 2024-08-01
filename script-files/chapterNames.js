@@ -61,7 +61,7 @@ export const physicsChapters = [
   }
 ];
 
-export const mathsChapters = [
+export const mathematicsChapters = [
   {
     Name: 'Matrix & Determinant'
   },
